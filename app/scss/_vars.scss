@@ -1,0 +1,15 @@
+$accent: orange;
+$text: #333;
+$active-color: #ff9fa5;
+$normal-color: #ffb0b5;
+$btn-color: #32d2bb;
+$btn-dark-color: #08b69d;
+$btn-active-color: #ff5e00;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

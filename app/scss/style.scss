@@ -1,0 +1,39 @@
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss";
+@import "../libs/bootstrap/scss/bootstrap-grid.scss";
+@import "../libs/bootstrap/scss/utilities/_sizing.scss";
+@import "../libs/magnific-popup/dist/magnific-popup.scss";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.scss";
+@import "../libs/swiper/dist/css/swiper.min.scss";
+@import "../libs/revealator/fm.revealator.jquery.min.scss";
+/*@import "../libs/bootstrap/dist/css/bootstrap.min.scss";*/
+@import "../libs/jQueryFormStyler/dist/jquery.formstyler.scss";
+
+@import "fonts";
+@import "mixins";
+@import "vars";
+@import "media";
+@import "main";
+@import "main/popup";
+@import "main/breadcrumbs";
+
+@import "header/header";
+@import "header/header-banner";
+
+@import "main/about-us";
+@import "main/courses";
+@import "main/center-banner";
+@import "main/teacher";
+@import "main/news";
+@import "main/review";
+@import "main/inst";
+@import "main/contacts";
+@import "main/seo";
+
+@import "main/404";
+@import "main/blog";
+@import "main/blog-page";
+@import "main/gallery";
+
+@import "table";
+
+@import "footer/footer";

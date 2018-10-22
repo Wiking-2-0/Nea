@@ -1,0 +1,4 @@
+node_modules/
+makets/
+dist/
+package-lock.json

@@ -1,0 +1,45 @@
+.wrong-page{
+	/*height: calc(100vh - 140px - 280px);*/
+	height: 100vh;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url(../img/wrong-page-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	.container{
+		height: 100%;
+	}
+	&-info{
+		height: 100%;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.block-head{
+			&-title{
+				color: #000;
+			}
+			&-subtitle{
+				display: block;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				font-size: 24px;
+			}
+		}
+		.site-btn{
+			color: #FFF;
+			background-color: $normal-color;
+			border-color: transparent;
+			text-transform: none;
+			&:hover{
+				background-color: $active-color;
+			}
+		}
+	}
+}

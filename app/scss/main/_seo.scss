@@ -1,0 +1,31 @@
+.seo{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 50px;
+	background-image: url(../img/seo-bg.jpg);
+	background-size: cover;
+	.block-head{
+		text-align: left;
+	}
+	&-content{
+		&-descr{
+			width: 60%;
+			padding: 20px;
+			padding-left: 0;
+			height: 220px;
+			overflow-y: auto;
+			font-family: 'Optima';
+			color: #4b4b4b;
+			p{
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 300;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		&-content-descr{
+			width: 100%;
+		}
+	}
+}

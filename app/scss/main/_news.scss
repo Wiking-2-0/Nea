@@ -1,0 +1,329 @@
+.news-block{
+	padding-top: 40px;
+	padding-bottom: 80px;
+	&_list{
+
+	}
+	.next-page{
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.site-btn{
+			padding-left: 60px;
+			padding-right: 60px;
+			color: #FFF;
+			border-color: #FFF;
+			background-color: $normal-color;
+			&:hover{
+				background-color: $active-color;
+			}
+		}
+	}
+	&_item{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+		&:hover{
+		}
+		.site-btn{
+			color: #FFF;
+			text-transform: none;
+			border-color: transparent;
+			background-color: $normal-color;
+			&:hover{
+				background-color: $active-color;
+			}
+		}
+		.img-wrap{
+			width: 350px;
+			height: 100%;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit:cover;
+			}
+		}
+		&-content{
+			width: calc(100% - 350px - 250px);
+			border-top: 1px solid #f0f0f0;
+			border-bottom: 1px solid #f0f0f0;
+			padding-bottom: 20px;
+			.title{
+				display: block;
+				min-height: 51px;
+				max-height: 71px;
+				overflow: hidden;
+				padding: 15px;
+				padding-left: 30px;
+				border-bottom: 1px solid #f0f0f0;
+				font-family: 'Optima';
+				font-size: 20px;
+				line-height: 1;
+				font-weight: bold;
+				color: #272727;
+			}
+			.descr{
+				margin-bottom: 0;
+				padding: 15px;
+				padding-left: 30px;
+				padding-bottom: 0;
+				height: 150px;
+				overflow-y: hidden;
+				color: #555555;
+			}
+		}
+		&-time{
+			width: 250px;
+			padding: 25px 15px;
+			text-align: center;
+			border: 1px solid #f0f0f0;
+			time,.name{
+				position: relative;
+				display: block;
+				text-align: left;
+				margin-bottom: 15px;
+				padding-left: 35px;
+				font-size: 18px;
+				line-height: 25px;
+				color: $normal-color;
+				&:before{
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 25px;
+					height: 25px;
+					background-size: contain;
+				}
+			}
+			time{
+				font-family: 'Optima';
+				&:before{
+					background-image: url(../img/icons/calendar.svg);
+				}
+			}
+			.name{
+				&:before{
+					background-image: url(../img/icons/book.svg);
+				}
+			}
+			.site-btn{
+				padding-left: 45px;
+				padding-right: 45px;
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&_item{
+			.img-wrap{
+				width: 100%;
+				height: 250px;
+			}
+			&-content{
+				width: 100%;
+			}
+			&-time{
+				width: 100%;
+				max-width: 280px;
+				margin-left: auto;
+				margin-right: auto;
+				border: 0;
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		&-list{
+
+		}
+	}
+}
+
+.news-page,.content-page{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	&-head{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+	&-content{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		ul{
+			padding-left: 10px;
+			list-style: none;
+			li{
+				position: relative;
+				padding-left: 25px;
+				font-weight: 300;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 9px;
+					left: 0;
+					width: 15px;
+					height: 3px;
+					background-color: $active-color;
+				}
+			}
+		}
+		h2{
+			position: relative;
+			margin-bottom: 30px;
+			font-family: 'Optima';
+			font-weight: 400;
+			display: inline-block;
+			padding: 5px 50px;
+			font-size: 24px;
+			line-height: 1;
+			color: #363636;
+			&:before{
+				content: '';
+				position: absolute;
+				top: calc(50% - 1px);
+				width: 40px;
+				height: 2px;
+				background-color: #000;
+			}
+			&:before{
+				left: 0;
+			}
+		}
+		b{
+			position: relative;
+			display: block;
+			padding-left: 25px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 12px;
+				width: 10px;
+				height: 10px;
+				background-color: $active-color;
+			}
+		}
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	&-title{
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+		padding-left: 20px;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 32px;
+		text-transform: uppercase;
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 3px;
+			height: 100%;
+			background-color: $active-color;
+		}
+	}
+	&-time{
+		position: relative;
+		display: block;
+		padding-left: 50px;
+		font-size: 24px;
+		line-height: 30px;
+		color: #6f6f6f;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 30px;
+			background-image: url("../img/icons/calendar.svg");
+			-webkit-background-size: contain;
+			background-size: contain;
+			filter: brightness(0);
+			opacity: .6;
+		}
+	}
+	&-img{
+		img{
+			width: 100%;
+			height: 370px;
+			object-fit: cover;
+		}
+	}
+	&-descr{
+		padding: 30px 20px;
+		p{
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 400;
+			color: #363636;
+		}
+	}
+	.back-blog{
+		position: relative;
+		margin: 0 auto;
+		display: inline-block;
+		padding-right: 50px;
+		font-weight: 400;
+		line-height: 26px;
+		color: #000;
+		&:hover{
+			.arrow{
+				width: 40px;
+			}
+		}
+		.arrow{
+			position: absolute;
+			top: 50%;
+			left: calc(100% - 40px);
+			width: 30px;
+			height: 1px;
+			background-color: #000;
+			transition: width .3s linear;
+			&:after,&:before{
+				content: '';
+				position: absolute;
+				top: -3px;
+				right: 0;
+				width: 8px;
+				height: 1px;
+				background-color: #000;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			&:after{
+				top: auto;
+				bottom: -3px;
+				-webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+		}
+		&:hover{
+			color: #000;
+		}
+	}
+}

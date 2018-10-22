@@ -1,0 +1,189 @@
+.teacher{
+	margin-top: 100px;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+	background-color: #fbfbfb;
+	&_list{
+
+	}
+	&_item{
+		a{
+			display: block;
+			&:hover{
+				color: inherit;
+			}
+		}
+		&-step{
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			font-weight: bold;
+			.last-name{
+				display: block;
+				font-size: 18px;
+				padding-right: 6px;
+				line-height: 1.1;
+				text-transform: uppercase;
+			}
+			.name{
+				font-size: 16px;
+				line-height: 1;
+			}
+		}
+		&-descr{
+			.title{
+				display: block;
+				padding-bottom: 10px;
+				margin-bottom: 5px;
+				position: relative;
+				font-size: 14px;
+				color: #767676;
+				&:after{
+					content: '';
+					position: absolute;
+					left: calc(50% - 37px);
+					bottom: 0;
+					width: 74px;
+					height: 2px;
+					background-color: #dedede;
+				}
+			}
+			.descr{
+				position: relative;
+				padding-bottom: 20px;
+				margin-bottom: 5px;
+				font-size: 16px;
+				font-weight: 400;
+				&:after{
+					content: '';
+					position: absolute;
+					left: calc(50% - 37px);
+					bottom: 0;
+					width: 74px;
+					height: 2px;
+					background-color: #dedede;
+				}
+			}
+			.exp{
+				text-align: center;
+				font-family: 'Optima';
+				color: #96b3a9;
+				.exp-year{
+					position: relative;
+					padding-left: 40px;
+					padding-right: 5px;
+					font-weight: bold;
+					&:before{
+						content: '';
+						position: absolute;
+						left: 0;
+						top: -4px;
+						width: 30px;
+						height: 30px;
+						background-image: url(../img/icons/winner.svg);
+						-webkit-background-size: contain;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+}
+.teacher-page{
+	padding-top: 60px;
+	.teacher{
+		&_item{
+			width: 100%;
+			margin-bottom: 40px;
+			display: flex;
+			flex-wrap: wrap;
+			&-img{
+				width: 40%;
+			}
+			&-descr{
+				width: 60%;
+				padding: 0;
+				border: 1px solid #e8e8e8;
+				border-left: 0;
+				text-align: left;
+				.title{
+					position: static;
+					padding: 25px;
+					margin-bottom: 0;
+					font-size: 18px;
+					line-height: 1;
+					color: #454545;
+					border-bottom: 1px solid #e8e8e8;
+					&:after{
+						content: none;
+					}
+				}
+				.descr{
+					position: static;
+					height: calc(100% - 145px);
+					max-height: 200px;
+					overflow-y: auto;
+					padding: 25px;
+					margin-bottom: 0px;
+					border-bottom: 1px solid #e8e8e8;
+					&:after{
+						content: none;
+					}
+				}
+				.exp{
+					text-align: left;
+					padding: 20px 25px;
+					&-year{
+						font-size: 32px;
+						line-height: 1;
+						&:before{
+							top: 6px;
+						}
+					}
+					&-info{
+						font-size: 24px;
+						line-height: 32px;
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		.teacher{
+			&_item{
+				&-img{
+					width: 100%;
+				}
+				&-descr{
+					width: 100%;
+					.title{
+						padding: 15px;
+					}
+					.descr{
+						height: auto;
+						max-height: 300px;
+						padding: 10px;
+					}
+					.exp{
+						&-year{
+							font-size: 26px;
+							&:before{
+								top: 2px;
+							}
+						}
+						&-info{
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+
+	}
+}

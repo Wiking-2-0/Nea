@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Nea</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-favicon.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header ">
+		//= parts/header.html
+	</header>
+	<main class="">
+		//= parts/breadcrumbs.html
+		//= parts/contacts.html
+		<div class="contacts-feedback">
+			<div class="container">
+				<div class="block-head">
+					<span class="block-head-title">Форма обратной связи</span>
+					<span class="block-head-subtitle">Остались вопросы? Заполните форму ниже – мы ответим</span>
+				</div>
+				<form method="POST" class="contacts-feedback-form">
+					<input type="text" name="name" placeholder="Имя" required="">
+					<input type="tel" name="phone" placeholder="Телефон" required="">
+					<input type="email" name="email" placeholder="E-mail">
+					<textarea name="comment" placeholder="Комментарий"></textarea>
+					<button class="site-btn">отправить <span class="arrow"></span></button>
+				</form>
+			</div>
+		</div>
+		//= parts/inst.html
+	</main>
+	//= parts/footer.html
+	//= parts/popup.html
+	<script src="js/libs.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

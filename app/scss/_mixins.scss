@@ -1,0 +1,86 @@
+@mixin list-reset{
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li{
+		font-size: 16px;
+		display: inline-block;
+		a{
+			text-decoration: none;
+		}
+	}
+}
+@mixin clearfix{
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin base{
+	-webkit-animation-iteration-count: 1;  
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-timing-function:linear;
+}
+@mixin left{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: left-spin;
+}
+@mixin right{
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: right-spin;
+}
+
+@mixin transition ($properties...) {
+	transition: $properties .3s ease-out;
+	-webkit-transition: $properties .3s ease-out;
+	-moz-transition: $properties .3s ease-out;
+	-ms-transition: $properties .3s ease-out;
+	-o-transition: $properties .3s ease-out;
+}
+
+@mixin placeholder($input-color,$opacity){
+	&::-webkit-input-placeholder {color:$input-color;opacity: $opacity;}
+	&::-moz-placeholder          {color:$input-color;opacity: $opacity;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:$input-color;opacity: $opacity;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:$input-color;opacity: $opacity;}
+}
+
+/* transition*/
+@mixin item($delay) {
+	opacity: 0;
+  fill: transparent;
+  stroke: $active-color;
+  stroke-width: 10;
+  stroke-miterlimit:20;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 1000;
+  &.is-active {
+  	opacity: 1;
+  	fill: $active-color;
+	  stroke: transparent;
+    stroke-dashoffset: 0;
+    transition: opacity 0.2s ease-in $delay, stroke 2s ease-in $delay, stroke-dashoffset 2s ease-in $delay, fill 2s ease-in $delay;
+  }
+}
+
+ /*animation*/
+@mixin item--animation($delay) {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 5;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: stroke 3s ease-in $delay, stroke-dashoffset 3s ease-in $delay, fill 3s ease-in $delay;
+}
+
+
+
+
+
+
